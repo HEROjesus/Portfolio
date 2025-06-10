@@ -9,12 +9,10 @@ export default function Home() {
   return (
     <section
       className="
-        flex flex-col items-center justify-center min-h-screen p-6 space-y-8
+        flex flex-col items-center justify-center min-h-dvh p-6 space-y-8
         bg-gradient-to-b from-[#f0f4ff] to-[#e0e7ff] text-center
         md:flex-row md:justify-between md:space-x-8 md:space-y-0
-        md:p-12 md:bg-white
-  
-"
+        md:p-12 md:bg-white"
     >
       <div className="max-w-xl space-y-6 ">
         <motion.h1
@@ -62,10 +60,11 @@ export default function Home() {
         className="hidden md:block"
       ></motion.div>
       <motion.div
-      initial={{ opacity: 0, x: -20 }}
+        initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         whileHover={{ scale: 1.1 }}
-        transition={{ duration: 3, type: "spring", stiffness: 100 }}>
+        transition={{ duration: 3, type: "spring", stiffness: 100 }}
+      >
         <Image
           src="/Rafael_Hero.png"
           alt="Hero image"

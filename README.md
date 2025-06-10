@@ -39,7 +39,7 @@ npm install
 npm run dev
 ````
 
-Acesse: [http://localhost:3000](https://portifolio-omega-sandy-22.vercel.app/)
+Acesse: [link](https://portifolio-omega-sandy-22.vercel.app/)
 
 ## 📄 Licença
 
