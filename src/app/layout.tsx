@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RJ || Front-end Developer Portfólio",
     description: "A simple portfolio website",
-    url: "https://your-portfolio-url.com",
+    url: "https://portifolio-omega-sandy-22.vercel.app/",
     siteName: "RJ Portfólio",
     images: [
       {
@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons/favicon.ico.svg" />
       </head>
       <body className={`${roboto.variable} antialiased`}>
         {children}
