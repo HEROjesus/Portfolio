@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
-// Configuração da fonte Roboto
+// Fonte Roboto configurada
 const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-Savete",
@@ -13,8 +13,12 @@ const roboto = Roboto({
   adjustFontFallback: true,
 });
 
-// Metadados para SEO e redes sociais
+// Metadados globais
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NODE_ENV === "production"
+    ? "https://seu-dominio.com" 
+    : "http://localhost:3000"
+  ),
   title: "RJ || Front-end Developer Portfólio",
   description: "A simple portfolio website",
   keywords: [
@@ -36,11 +40,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RJ || Front-end Developer Portfólio",
     description: "A simple portfolio website",
-    url: "https://portifolio-omega-sandy-22.vercel.app/",
     siteName: "RJ Portfólio",
     images: [
       {
-        url: '/img/portifolio.png',
+        url: "/img/portifolio.png",
         width: 1200,
         height: 630,
         alt: "Portfólio Hero image",
@@ -53,9 +56,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pt-BR">
       <head>
